@@ -66,7 +66,7 @@ The size is programmed using an aspect ratio and a height, so width is calculate
 
 **NODATA_ASPECT_RATIO**: Aspect ration as a fraction.
 
-**NODATA_HEIGHT: The height of no data images in pixels.
+**NODATA_HEIGHT**: The height of no data images in pixels.
 
 ## Endpoints
 
