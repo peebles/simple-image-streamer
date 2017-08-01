@@ -1,0 +1,33 @@
+version: "2"
+
+services:
+
+  redis:
+    image: redis
+    container_name: redis
+    restart: always
+    environment:
+      REDIS_PASS: "**None**"
+    expose:
+      - "6379"
+
+  app:
+    build: .
+    container_name: app
+    restart: always
+    environment:
+      REDIS_HOST: "redis"
+      EXPIRE: "60"
+      MIMETYPE: "image/jpg"
+      NODATA_ASPECT_RATIO: "0.5625"
+      NODATA_HEIGHT: "720"
+    ports:
+      - "80:3000"
+
+  tester:
+    build:
+      context: .
+      dockerfile: Dockerfile.tester
+    environment:
+      TEST_SESSION: "xyzabc"
+

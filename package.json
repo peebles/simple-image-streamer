@@ -1,0 +1,21 @@
+{
+  "name": "kenneth",
+  "version": "1.0.0",
+  "description": "Code snippets to use Redis as a mpeg live video streamer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Andrew Peebles",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^2.5.0",
+    "busboy": "^0.2.14",
+    "cors": "^2.8.4",
+    "express": "^4.15.3",
+    "redis": "^2.7.1",
+    "request": "^2.81.0",
+    "shortid": "^2.2.8",
+    "winston": "^2.3.1"
+  }
+}
